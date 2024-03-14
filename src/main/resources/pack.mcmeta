@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 15,
-    "description": "Heal Mobs after they're hurt using a potion effect."
+    "description": "Mobs heal after they're hurt using a custom potion effect."
   }
 }

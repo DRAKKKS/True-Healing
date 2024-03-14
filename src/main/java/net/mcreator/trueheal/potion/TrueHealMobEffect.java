@@ -1,5 +1,5 @@
 
-package net.mcreator.healingmobs.potion;
+package net.mcreator.trueheal.potion;
 
 import net.minecraftforge.client.extensions.common.IClientMobEffectExtensions;
 
@@ -10,8 +10,8 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-import net.mcreator.healingmobs.procedures.TrueHealOnEffectActiveTickProcedure;
-import net.mcreator.healingmobs.procedures.TrueHealActiveTickConditionProcedure;
+import net.mcreator.trueheal.procedures.TrueHealOnEffectActiveTickProcedure;
+import net.mcreator.trueheal.procedures.TrueHealActiveTickConditionProcedure;
 
 public class TrueHealMobEffect extends MobEffect {
 	public TrueHealMobEffect() {
@@ -20,7 +20,7 @@ public class TrueHealMobEffect extends MobEffect {
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.healing_mobs.true_heal";
+		return "effect.trueheal.true_heal";
 	}
 
 	@Override

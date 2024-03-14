@@ -1,4 +1,4 @@
-package net.mcreator.healingmobs.procedures;
+package net.mcreator.trueheal.procedures;
 
 public class TrueHealActiveTickConditionProcedure {
 	public static boolean execute(double amplifier, double duration) {

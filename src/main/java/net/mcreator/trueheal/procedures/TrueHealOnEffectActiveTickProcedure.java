@@ -1,4 +1,4 @@
-package net.mcreator.healingmobs.procedures;
+package net.mcreator.trueheal.procedures;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;

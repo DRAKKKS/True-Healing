@@ -1,4 +1,4 @@
-package net.mcreator.healingmobs.procedures;
+package net.mcreator.trueheal.procedures;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,8 +11,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 
-import net.mcreator.healingmobs.init.HealingMobsModMobEffects;
-import net.mcreator.healingmobs.HealingMobsMod;
+import net.mcreator.trueheal.init.TruehealModMobEffects;
+import net.mcreator.trueheal.TruehealMod;
 
 import javax.annotation.Nullable;
 
@@ -32,11 +32,11 @@ public class TrueHealEnvironmentProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(HealingMobsModMobEffects.TRUE_HEAL.get())) && !(entity instanceof Player)) {
-			HealingMobsMod.queueServerWork(1, () -> {
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruehealModMobEffects.TRUE_HEAL.get())) && !(entity instanceof Player)) {
+			TruehealMod.queueServerWork(1, () -> {
 				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(HealingMobsModMobEffects.TRUE_HEAL.get(), (int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1), 1, false, false));
+						_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.TRUE_HEAL.get(), (int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) + 1), 1, false, false));
 				}
 			});
 		}

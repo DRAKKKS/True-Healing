@@ -11,7 +11,7 @@
  *    will be REGENERATED on each build.
  *
  */
-package net.mcreator.healingmobs;
+package net.mcreator.trueheal;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -29,7 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.healingmobs.init.HealingMobsModMobEffects;
+import net.mcreator.trueheal.init.TruehealModMobEffects;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -40,16 +40,16 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
-@Mod("healing_mobs")
-public class HealingMobsMod {
-	public static final Logger LOGGER = LogManager.getLogger(HealingMobsMod.class);
-	public static final String MODID = "healing_mobs";
+@Mod("trueheal")
+public class TruehealMod {
+	public static final Logger LOGGER = LogManager.getLogger(TruehealMod.class);
+	public static final String MODID = "trueheal";
 
-	public HealingMobsMod() {
+	public TruehealMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		HealingMobsModMobEffects.REGISTRY.register(bus);
+		TruehealModMobEffects.REGISTRY.register(bus);
 
 	}
 

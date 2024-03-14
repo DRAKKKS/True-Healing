@@ -10,7 +10,7 @@
       "metadata": {
         "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/healingmobs/procedures/TrueHealActiveTickConditionProcedure.java"
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealActiveTickConditionProcedure.java"
         ],
         "dependencies": [
           {
@@ -33,7 +33,7 @@
       "registry_name": "true_heal_on_effect_active_tick",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/healingmobs/procedures/TrueHealOnEffectActiveTickProcedure.java"
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealOnEffectActiveTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -55,7 +55,7 @@
       "registry_name": "true_heal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/healingmobs/potion/TrueHealMobEffect.java"
+          "src/main/java/net/mcreator/trueheal/potion/TrueHealMobEffect.java"
         ]
       }
     },
@@ -68,7 +68,7 @@
       "registry_name": "true_heal_environment",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/healingmobs/procedures/TrueHealEnvironmentProcedure.java"
+          "src/main/java/net/mcreator/trueheal/procedures/TrueHealEnvironmentProcedure.java"
         ],
         "dependencies": [
           {
@@ -87,6 +87,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "effect.trueheal.true_heal": "True_Healing",
       "effect.healing_mobs.true_heal": "True_Healing"
     }
   },
@@ -95,23 +96,22 @@
     "children": []
   },
   "workspaceSettings": {
-    "modid": "healing_mobs",
-    "modName": "Healing Mobs",
+    "modid": "trueheal",
+    "modName": "True Healing",
     "version": "1.0.0",
-    "description": "Heal Mobs after they\u0027re hurt using a potion effect.",
-    "author": "Drakkxs, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "description": "Mobs heal after they\u0027re hurt using a custom potion effect.",
+    "author": "Drakkks, MCreator",
+    "websiteURL": "https://github.com/DRAKKKS/HealingMobs.git",
+    "license": "Public Domain",
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
-    "updateURL": "https://github.com/DRAKKKS/HealingMobs/upload",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.healingmobs",
+    "modElementsPackage": "net.mcreator.trueheal",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202300452316
