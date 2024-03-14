@@ -36,7 +36,8 @@ public class TrueHealEnvironmentProcedure {
 			TruehealMod.queueServerWork(1, () -> {
 				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.TRUE_HEAL.get(), (int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) + 1), 1, false, false));
+						_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.TRUE_HEAL.get(),
+								(int) (Math.max(entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1, entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) + 1), 1, false, false));
 				}
 			});
 		}
