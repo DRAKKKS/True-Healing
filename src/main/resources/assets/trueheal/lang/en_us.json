@@ -1,4 +1,8 @@
 {
+  "gamerule.truehealtime": "truehealtime",
+  "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 0, cannot be negative.",
   "effect.trueheal.true_heal": "True_Healing",
-  "effect.healing_mobs.true_heal": "True_Healing"
+  "gamerule.truehealamp": "truehealamp",
+  "effect.healing_mobs.true_heal": "True_Healing",
+  "gamerule.truehealtime.description": "Add to the True Healing environment time by seconds, default 0, cannot be negative."
 }

@@ -12,6 +12,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.trueheal.init.TruehealModMobEffects;
+import net.mcreator.trueheal.init.TruehealModGameRules;
 import net.mcreator.trueheal.TruehealMod;
 
 import javax.annotation.Nullable;
@@ -37,7 +38,9 @@ public class TrueHealEnvironmentProcedure {
 				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.TRUE_HEAL.get(),
-								(int) (((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) * 20), 0, false, false));
+								(int) (((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)) * 20
+										+ Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALTIME)), 0)),
+								(int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALAMP)), 0), false, false));
 				}
 			});
 		}

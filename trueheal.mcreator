@@ -81,14 +81,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "Truehealamp",
+      "type": "gamerule",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "truehealamp",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "Truehealtime",
+      "type": "gamerule",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "truehealtime",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "gamerule.truehealtime": "truehealtime",
+      "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 0, cannot be negative.",
       "effect.trueheal.true_heal": "True_Healing",
-      "effect.healing_mobs.true_heal": "True_Healing"
+      "gamerule.truehealamp": "truehealamp",
+      "effect.healing_mobs.true_heal": "True_Healing",
+      "gamerule.truehealtime.description": "Add to the True Healing environment time by seconds, default 0, cannot be negative."
     }
   },
   "foldersRoot": {
