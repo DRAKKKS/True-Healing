@@ -5,7 +5,7 @@ public class TrueHealActiveTickConditionProcedure {
 		double baseRate = 0;
 		double rateWithAmplifier = 0;
 		baseRate = 50;
-		rateWithAmplifier = baseRate / Math.pow(2, amplifier);
+		rateWithAmplifier = baseRate / Math.pow(2, amplifier + 1);
 		if (Math.floor(rateWithAmplifier) > 0) {
 			return duration % Math.floor(rateWithAmplifier) == 0;
 		}
