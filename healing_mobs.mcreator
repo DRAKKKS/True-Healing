@@ -1,0 +1,118 @@
+{
+  "mod_elements": [
+    {
+      "name": "TrueHealActiveTickCondition",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_active_tick_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/healingmobs/procedures/TrueHealActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "amplifier",
+            "type": "number"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrueHealOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healingmobs/procedures/TrueHealOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amplifier",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrueHeal",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healingmobs/potion/TrueHealMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "TrueHealEnvironment",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_heal_environment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/healingmobs/procedures/TrueHealEnvironmentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "effect.healing_mobs.true_heal": "True_Healing"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "healing_mobs",
+    "modName": "Healing Mobs",
+    "version": "1.0.0",
+    "description": "Heal Mobs after they\u0027re hurt using a potion effect.",
+    "author": "Drakkxs, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": false,
+    "serverSideOnly": false,
+    "updateURL": "https://github.com/DRAKKKS/HealingMobs/upload",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.healingmobs",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

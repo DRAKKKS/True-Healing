@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="healing_mobs"
+version="1.0.0"
+displayName="Healing Mobs"
+updateJSONURL="https://github.com/DRAKKKS/HealingMobs/upload"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="Drakkxs, MCreator"
+description="Heal Mobs after they're hurt using a potion effect."
+
+[[dependencies.healing_mobs]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.healing_mobs]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.2.0]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
