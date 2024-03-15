@@ -12,4 +12,5 @@ import net.minecraft.world.level.GameRules;
 public class TruehealModGameRules {
 	public static final GameRules.Key<GameRules.IntegerValue> TRUEHEALTIME = GameRules.register("truehealtime", GameRules.Category.MOBS, GameRules.IntegerValue.create(0));
 	public static final GameRules.Key<GameRules.IntegerValue> TRUEHEALAMP = GameRules.register("truehealamp", GameRules.Category.MOBS, GameRules.IntegerValue.create(0));
+	public static final GameRules.Key<GameRules.IntegerValue> TRUEHEALDELAY = GameRules.register("truehealdelay", GameRules.Category.MOBS, GameRules.IntegerValue.create(1));
 }

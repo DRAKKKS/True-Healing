@@ -34,7 +34,7 @@ public class TrueHealEnvironmentProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(TruehealModMobEffects.TRUE_HEAL.get())) && !(entity instanceof Player)) {
-			TruehealMod.queueServerWork(1, () -> {
+			TruehealMod.queueServerWork((int) Math.max((world.getLevelData().getGameRules().getInt(TruehealModGameRules.TRUEHEALDELAY)), 0), () -> {
 				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) == (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1))) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(TruehealModMobEffects.TRUE_HEAL.get(),
