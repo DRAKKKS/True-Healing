@@ -9,7 +9,7 @@ public class TrueHealOnEffectActiveTickProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.setHealth((float) Math.min((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + Math.max(amplifier, 1), entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1));
+				_entity.setHealth((float) Math.min((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + amplifier, entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1));
 		}
 	}
 }

@@ -50,6 +50,7 @@
     {
       "name": "TrueHeal",
       "type": "potioneffect",
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "true_heal",
@@ -125,11 +126,11 @@
     "en_us": {
       "gamerule.truehealtime": "truehealtime",
       "gamerule.truehealdelay": "truehealdelay",
-      "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 0, cannot be negative.",
-      "effect.trueheal.true_heal": "True_Healing",
+      "gamerule.truehealamp.description": "Add to the True Healing environment amplifier, default 1 for True Healing 2, cannot be negative.",
+      "effect.trueheal.true_heal": "True Healing",
       "gamerule.truehealamp": "truehealamp",
       "effect.healing_mobs.true_heal": "True_Healing",
-      "gamerule.truehealdelay.description": "Add to the True Healing is delayed before being applied in ticks, default 1, cannot be negative. Twenty ticks is one second. ..",
+      "gamerule.truehealdelay.description": "Add to the True Healing is delayed before being applied in ticks, default 100 for 5 seconds, cannot be negative. Twenty ticks is one second. ..",
       "gamerule.truehealtime.description": "Add to the True Healing environment time by seconds, default 0, cannot be negative."
     }
   },
@@ -140,7 +141,7 @@
   "workspaceSettings": {
     "modid": "trueheal",
     "modName": "True Healing",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "Mobs heal after they\u0027re hurt using a custom potion effect.",
     "author": "Drakkks, MCreator",
     "websiteURL": "https://github.com/DRAKKKS/True-Healing.git",

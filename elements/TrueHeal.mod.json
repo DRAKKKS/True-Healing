@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "True_Healing",
+    "effectName": "True Healing",
     "icon": "pixel-21-512-4081774057.png",
     "color": {
       "value": -52225,

@@ -4,9 +4,9 @@
   "definition": {
     "type": "Number",
     "displayName": "truehealamp",
-    "description": "Add to the True Healing environment amplifier, default 0, cannot be negative.",
+    "description": "Add to the True Healing environment amplifier, default 1 for True Healing 2, cannot be negative.",
     "category": "MOBS",
     "defaultValueLogic": false,
-    "defaultValueNumber": 0
+    "defaultValueNumber": 2
   }
 }
