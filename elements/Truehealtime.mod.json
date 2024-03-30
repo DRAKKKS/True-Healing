@@ -7,6 +7,6 @@
     "description": "Add to the True Healing environment time by seconds, default 0, cannot be negative.",
     "category": "MOBS",
     "defaultValueLogic": false,
-    "defaultValueNumber": 0
+    "defaultValueNumber": 200
   }
 }
