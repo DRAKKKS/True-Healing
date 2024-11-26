@@ -1,1 +1,1 @@
-True Healing is a mod made for me and my friends. It's not meant to be used on its own, and should not be assumed as a standalone, fully finished mod.
+True Healing is a mod made for me and my friends, it's made with McCreator so use at your own risk.
